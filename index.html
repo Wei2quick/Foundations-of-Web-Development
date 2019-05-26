@@ -8,20 +8,38 @@
         margin-bottom: 120px;
       }
       .container {
-        position: relative;
+        background-color: purple;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        /* height: 5px; */
+      }
+      .container_right {
+        padding-left: 200px;
+        /* margin-left: 200px;
+        margin-top: 10px; */
+      }
+      .container_right_bottom {
+        position: static;
+        margin-left: 200px;
+        margin-top: 200px;
       }
       nav {
         box-sizing: border-box;
         border: 3px solid red;
+        background-color: aqua;
         left: 0px;
+        /* top: 0; */
         position: absolute;
         width: 200px;
       }
       section {
         box-sizing: border-box;
         border: 3px solid orange;
-        /* position is static by default */
-        margin-left: 200px;
+        position: relative;
+        margin-left: 10px;
         margin-bottom: 10px;
       }
       footer {
@@ -49,15 +67,18 @@
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
-      <section>
-        <h1>My First Heading</h1>
-        <p>
-          Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
-          ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
-          ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
-          euismod.
-        </p>
-      </section>
+      <div class="container_right">
+          <h1>My First Heading</h1>
+          <p>
+            Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
+            ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
+            ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
+            euismod.
+          </p>
+      </div>
+    </div>
+
+    <div class="container_right_bottom">
       <section>
         <h2>Second Section</h2>
         <p>
@@ -73,11 +94,73 @@
         <p>
           Notice what happens when you resize your browser. It works nicely!
         </p>
+        <p>
+            Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
+            ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
+            ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
+            euismod.
+          </p>
+          <p>
+              Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
+              ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
+              ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
+              euismod.
+            </p>
+            <p>
+                Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
+                ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
+                ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
+                euismod.
+              </p>
+              <p>
+                  Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
+                  ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
+                  ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
+                  euismod.
+                </p>
+                <p>
+                    Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
+                    ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
+                    ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
+                    euismod.
+                  </p>
+                  <p>
+                      Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
+                      ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
+                      ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
+                      euismod.
+                    </p>
+                    <p>
+                        Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
+                        ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
+                        ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
+                        euismod.
+                      </p>
+                      <p>
+                          Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
+                          ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
+                          ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
+                          euismod.
+                        </p>
+                        <p>
+                            Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
+                            ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
+                            ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
+                            euismod.
+                          </p>
+                          <p>
+                              Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
+                              ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
+                              ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis
+                              euismod.
+                            </p>
       </section>
-      <footer>
-        If you use a fixed header or footer, make sure there is room for it! I
-        put a margin-bottom on the body.
-      </footer>
+    </div>
+      
+    <footer>
+      If you use a fixed header or footer, make sure there is room for it! I
+      put a margin-bottom on the body.
+    </footer>
     </div>
   </body>
 </html>
