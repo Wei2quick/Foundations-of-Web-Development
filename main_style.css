@@ -1,0 +1,7 @@
+h2 {background-color: lightgrey; font-size: 48px; text-align: center; margin: 24px 40%; padding: 10px; 
+    border-style: solid; border-width: 2px; border-color: lightcoral; font-family: sans-serif}
+p {font-family:'Times New Roman', Times, serif; font-size: 24px; background-color: lavenderblush; margin: 16px 100px 16px 100px; border-style: dotted; border-width: 1px; border-color: skyblue; padding: 10px;}
+span.bold {font-weight: bold}
+span.italic {font-style: italic; background-color: salmon}
+a {background-color: pink}
+a:hover {background-color: seagreen; text-transform: capitalize}
