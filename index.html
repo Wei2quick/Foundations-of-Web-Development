@@ -15,26 +15,94 @@
       <span class="food">Spicy Tingly Beef noodles from Xian</span>.
     </p>
 
-    <input class="name_field" type="text" />
+    <input class="firstname_field" type="text" />
+    <input class="lastname_field" type="text" />
 
     <button class="presto">Abra Cadabra!</button>
 
     <script type="text/javascript">
-      let myVariable = "Hello World!";
+    
+//    let myConstant = "I am the constant and I don't change"
 
-      // alert(myVariable);
+//    let myVariable = "I am the variable and I can be changed"
 
-      window.onload = function() {
-        // do something when the page loads
-        // alert("welcome");
+//    let myNumber = 3;
+
+//    let mytring = "Variables are great" 
+
+//    let myBoolean = false
+
+//     myNumber = 33333
+    
+//     myBoolean = true
+
+//    let variable1 = 1
+    
+//     // alert(myConstant)
+
+//     // alert(myVariable)
+
+//     console.log(myConstant)
+//     console.log(myVariable)
+//     console.log(myNumber)
+//     console.log(myVariable)
+//     console.log(myBoolean)
+//     console.log(variable1)
+
+
+
+// let animalone = "lizard"
+// let animaltwo = "elephant"
+// let animalthree = "monkey"
+
+// let color = "grey"
+// // let color = "grey"
+// let color = "brown"
+
+
+// if(color === "green") {
+//     alert('sure, it is a lizard')
+// }
+// else if(color === "grey") {
+//     alert('no, I think it is an elephant')
+// }
+// else if(color === "brown") {
+//     alert('hmmm, it might be a monkey')
+// }
+
+
+function myNameis(input) {
+    let message = "my name is" + " " + input;
+
+    console.log(message)
+}
+
+
+myNameis("Wei")
+
+    //   let myVariable = "Hello World!";
+
+    //   alert(myVariable);
+
+    //   window.onload = function() {
+    //     do something when the page loads
+    //     alert("welcome");
+    //   };
+
+
+      let btn = document.querySelector(".presto");
+      btn.onclick = function() {
+
+        let fnamefield = document.querySelector(".firstname_field");
+        let firstname = fnamefield.value;
+
+        let lnamefield = document.querySelector(".lastname_field");
+        let lastname = lnamefield.value;
+        
+        let form_input = firstname + " " + lastname;
+
+        alert(form_input);
       };
-
-      // let btn = document.querySelector(".presto");
-      // btn.onclick = function() {
-      //   let form = document.querySelector(".name_field");
-      //   let form_input = form.value;
-      //   alert(form_input);
-      // };
 
       // Conditionals in a function
       // let btn = document.querySelector(".presto");
@@ -64,6 +132,7 @@
         var result = num1 * num2;
         return result;
       }
+    
       // multiply(4, 7);
     </script>
   </body>
