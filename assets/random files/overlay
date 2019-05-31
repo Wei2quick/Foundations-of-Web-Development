@@ -1,0 +1,59 @@
+#overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+
+  let message_btn = document.querySelector(".message_btn");
+
+  message_btn.onclick = function(e) {
+    e.preventDefault();
+    showMessage();
+  };
+
+
+
+function showMessage() {
+  let overlay = document.querySelector("#overlay");
+  console.log("message button clicked");
+
+  overlay.classList.add("show");
+}
+
+
+
+  overlay.onclick = function(e) {
+    e.preventDefault();
+    hideOverlay();
+  };
+
+
+
+  function hideOverlay() {
+  let overlay = document.querySelector("#overlay");
+  console.log("overlay clicked!");
+  overlay.classList.remove("show");
+}
+
+
+function showMessage() {
+  let overlay = document.querySelector("#overlay");
+  console.log("message button clicked");
+
+  overlay.onclick = function(e) {
+    e.preventDefault();
+    hideOverlay();
+  };
+
+function hideOverlay() {
+  let overlay = document.querySelector("#overlay");
+  console.log("overlay clicked!");
+  overlay.classList.remove("show");
+}
+
