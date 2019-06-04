@@ -6,93 +6,119 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  
 }
 
 body {
-  background-color: #eaeaea;
+  background-color: darkgray;
   margin: 0;
+  padding: 0 33px;
+}
+
+nav {
+  position: relative;
+  height: 100px;
+  width: 100%;
   padding: 0;
+  background-color: aqua;
+  text-align: center;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-header {
-  border-bottom: 2px solid #ccc;
-  margin-bottom: 30px;
-  padding-top: 70px;
-  padding-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  font-family: Georgia, serif;
-  font-size: 25px;
-}
-
-header a {
-  color: black;
-  text-decoration: none;
-}
-
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header nav ul li {
+.logo {
   display: inline-block;
-  margin-left: 10px;
+  height: 100px;
+  width: 400px;
+  background-color: lightyellow;
 }
 
-.logo strong {
-  font-family: Impact, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
-  font-weight: normal;
-  display: inline-block;
-  margin-right: 15px;
-  padding-right: 15px;
-  border-right: 2px solid #ccc;
+.logo a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+.logo img {}
 
 main {
-  overflow: auto;
+  top: 100px;
 }
 
-main section {
-  background-color: red;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 400px;
-  margin-bottom: 30px;
+main .container{
+  margin: 1% 0;
+  padding-top: 46%;
+  position: relative;
 }
 
-main .large {
-  background-image: url(../images/one.jpeg);
+main .content {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
-main .small {
-  float: left;
-  height: 300px;
-  width: calc(50% - 15px);
+main .container_narrow {
+  position: relative;
+  height: 100%;
+  width: 33%;
+  padding: 0;
 }
 
-main .left {
-  background-color: blue;
-  background-image: url(../images/two.jpeg);
-}
-
-main .right {
+main .container_wide {
+  position: relative;
+  height: 100%;
+  width: 66%;
+  padding-top: 20px;
   background-color: green;
-  background-image: url(../images/three.jpeg);
-  float: right;
 }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    padding: 0 100px;
-  }
+main .top {
+  position: absolute;
+  background-color: pink;
+  width: 100%;
+  height: 49%;
+  top: 0;
+}
+
+main .bottom {
+  position: absolute;
+  background-color: pink;
+  width: 100%;
+  height: 49%;
+  bottom: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 20px 0;
+  padding: 20px 0;
+  height: 200px;
+  bottom: 0;
+  background-color: gold;
+}
+
+footer .contact {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  padding: 20px 20px;
+}
+
+footer .copyright {
+  position: relative;
+  height: 100%;
+  width: 33%;
+  padding: 20px 20px;
+}
+
+footer .copyright .center{
+  position: relative;
+  text-align: right;
+  top: 50%;
+  right: 0;
 }
