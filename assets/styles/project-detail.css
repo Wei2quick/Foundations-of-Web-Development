@@ -6,7 +6,6 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-  
 }
 
 body {
@@ -23,6 +22,25 @@ nav {
   background-color: aqua;
   text-align: center;
 }
+
+nav .back {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: auto;
+  background-color: lightpink;
+  left: 0;
+  top: 0;
+}
+
+nav .back a {
+  display: flex;
+  align-items: center;
+  padding: 0 5px ;
+  height: 100%;
+  width: 100%;
+}
+
 
 .logo {
   display: inline-block;
@@ -44,15 +62,15 @@ main {
   top: 100px;
 }
 
-main .container{
+main .container_img{
   margin: 1% 0;
-  padding-top: 46%;
+  padding-top: 56.25%;
   position: relative;
+  background-color: lightgrey;
 }
 
-main .content {
-  display: flex;
-  justify-content: space-between;
+main .content_img {
+  display: inline;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -60,41 +78,42 @@ main .content {
   top: 0;
 }
 
-main .content a {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-main .container_narrow {
-  position: relative;
-  height: 100%;
-  width: 33%;
-  padding: 0;
-}
-
-main .container_wide {
-  position: relative;
-  height: 100%;
-  width: 66%;
-  background-color: green;
-}
-
-main .top {
+main .content_img .img {
   position: absolute;
-  background-color: pink;
+  background-color: lime;
   width: 100%;
-  height: 49%;
-  top: 0;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-main .bottom {
-  position: absolute;
-  background-color: pink;
-  width: 100%;
-  height: 49%;
+main .container_cover .container_title {
+  position: relative;
   bottom: 0;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 5px 10px;
 }
+
+main .container_cover .container_title .text {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: :left;
+}
+
+
+
+
+main .container_bar_area {
+  background-color: aqua;
+  height: 100px;
+}
+
+main .container_process{}
 
 footer {
   display: flex;
@@ -102,8 +121,11 @@ footer {
   position: relative;
   margin: 20px 0;
   padding: 20px 0;
-  height: 200px;
+  width: 100%;
+  left: 50%;
   bottom: 0;
+  transform: translate(-50%, 0%);
+  height: 200px;
   background-color: gold;
 }
 

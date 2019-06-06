@@ -24,21 +24,21 @@ nav {
   text-align: center;
 }
 
-.logo {
+nav .logo {
   display: inline-block;
   height: 100px;
   width: 400px;
   background-color: lightyellow;
 }
 
-.logo a {
+nav .logo a {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.logo img {}
+nav .logo img {}
 
 main {
   top: 100px;
@@ -60,17 +60,43 @@ main .content {
   top: 0;
 }
 
-main .content a {
-  display: block;
+.cover_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 100%;
   width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.onhover:hover .cover_overlay {
+  opacity: 1;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content a {
+  text-decoration: none;
 }
 
 main .container_narrow {
   position: relative;
   height: 100%;
   width: 33%;
-  padding: 0;
+  padding;
 }
 
 main .container_wide {
