@@ -96,6 +96,8 @@ main .container_cover .container_title {
   width: 100%;
   height: auto;
   padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 main .container_cover .container_title .text {
@@ -106,14 +108,21 @@ main .container_cover .container_title .text {
 }
 
 
-
-
 main .container_bar_area {
   background-color: aqua;
-  height: 100px;
+  height: 80px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-main .container_process{}
+main .container_process {}
+
+main .container_process .container_narrow{}
+main .container_process .container_wide{}
+
+main .container_process .process_title{}
+main .container_process .process_detail{}
 
 footer {
   display: flex;
